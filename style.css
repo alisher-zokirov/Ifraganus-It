@@ -1,0 +1,285 @@
+body{
+    background-color: black;
+}
+
+.navbar-brand img{
+    width: 80px;
+    height: 60px;
+}
+
+.navbar{
+    background-color: gold;
+}
+
+.navbar-brand span{
+    font-size: 24px;
+}
+
+.navbar-link__a{
+    color: #FFFFFF;
+    display: flex;
+    padding: 0 5px;
+    position: relative;
+}
+.navbar-link__a::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black ;
+    transform: scaleX(0);
+    transition: 0.3s;
+    bottom: -10px;
+}
+
+.navbar-link__a:hover::after{
+    transform: scaleX(1);
+}
+
+.glow-on-hover {
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    background: none;
+    border: 2px solid black;
+}
+
+.glow-on-hover2 {
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background: none;
+    border: 2px solid black;
+}
+
+/* corusel */
+.carousel-item img{
+    width: 100%;
+    max-height: 100vh;
+}
+
+.carousel-caption p, h5{
+    font-size: 30px;
+}
+/* corusel end */
+
+/* card */
+
+.konsultatsiya{
+    margin-top: 80px;
+}
+
+.card{
+    background: rgb(255, 193, 7);
+    height: 500px;
+    color: black;
+}
+
+.card:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 5px #03e9f4,0 0 5px #03e9f4,
+    0 0 5px #03e9f4,0 0 30px #03e9f4;
+}
+
+.card-2:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 5px #03e9f4,0 0 5px #03e9f4,
+    0 0 5px #03e9f4,0 0 30px #03e9f4;
+}
+
+.card-2{
+    background: rgb(255, 193, 7);
+    border-radius: 5px;
+    height: 350px;
+    padding: 15px;
+    color: black;   
+}
+
+.card-bt{
+    width: 200px;
+    height: 50px;
+    background: none;
+    color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.card-input{
+    width: 300px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.card-input:focus{
+    background: transparent;
+    color: black;
+}
+
+.tel-number:focus{
+    background: transparent;
+    color: black;
+}
+
+.form-group {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 6px;
+    width: 300px;
+    background: none;
+  }
+  .form-group:focus {
+    color: #212529;
+      background-color: none;
+      border-color: #86b7fe;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  }
+  .form-group input {
+    display: inline-block;
+    width: auto;
+    border: none;
+  }
+  .form-group input:focus {
+    box-shadow: none;
+  }
+  .tel-number{
+    background: none;
+    color: white;
+  }
+
+.card-bt-click{
+    width: 300px;
+    height: 50px;
+    background-color: #48ff00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.card-bt-click:hover{
+    transition: 0.3;
+    box-shadow: 0 0 5px ,0 0 5px #48ff00,
+    0 0 5px #48ff00,0 0 30px #48ff00;
+}
+
+.crad-png-bg img{
+    width: 300px;
+    height: 220px;
+    margin-top: -20px;
+    margin-left: -50px;
+}
+/* card end */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yonalish-box-all{
+    display: flex; 
+    gap: 50px;
+}
+
+.yonalish-box{
+    width: 350px;
+    height: 300px;
+    position: relative;
+}
+
+.yonalish-box img{
+    width: 350px;
+    height: 280px;
+}
+
+.yonalish-box p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.yonalish-box p::before{
+    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, vero quia cum voluptatem quam eius velit. Distinctio suscipit voluptates unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, vero quia cum voluptatem quam eius velit. Distinctio suscipit voluptates unde.';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #64a1fe;
+    transform: scaleY(0);
+    transition: 0.3s;
+}
+
+.yonalish-box p:hover::before{
+    transform: scaleY(1);
+}
+
+.yonalish-box p:hover{
+    background: transparent;
+}
+
+.marque img{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.xarita iframe{
+    width: 100%;
+    min-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #03e9f4,0 0 5px #03e9f4,
+    0 0 5px #03e9f4,0 0 30px #03e9f4;
+}
+
+.footer{
+    margin-top: 100px;
+}
+
+.footer-navbar{
+    min-height: 100px;
+}
+
+.footer-brand img{
+    width: 80px;
+    height: 60px;
+}
+
+.footer-icon a img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (max-width:576px) {
+    .crad-png-bg{
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    .card-bt{
+        margin-top: 100px;
+    }
+}
